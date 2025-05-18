@@ -1,13 +1,15 @@
 package com.littlelemon.littlelemon
 
 interface Destinations {
-    val onboarding: String
-    val home: String
-    val profile: String
-}
+    val route: String
+    }
 
-object AppDestinations : Destinations{
-    override val onboarding = "onboarding"
-    override val home = "home"
-    override val profile = "profile"
+object Onboarding : Destinations{
+    override val route = "Onboarding"
+    }
+object Home : Destinations{
+    override val route = "Home"
+}
+object Profile : Destinations{
+    override val route = "Profile"
 }
