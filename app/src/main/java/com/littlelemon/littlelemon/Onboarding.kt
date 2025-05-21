@@ -6,42 +6,50 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Divider
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.text.input.TextFieldValue
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import android.content.Context
+import android.content.SharedPreferences
+import android.widget.Toast
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.runtime.Composable
 
 @Composable
-fun Onboarding() {
+fun Onboarding(navController: NavHostController) {
     Column {
         // Header mit Logo
         Box(
             modifier = Modifier
                 .fillMaxWidth()
+                .padding(16.dp)
         )
         {
-        Image(painterResource(id = R.drawable.logo),
-            contentDescription = "Logo",
-            modifier = Modifier
-            .fillMaxWidth(.32f)
-            .fillMaxHeight(.12f)
+            Image(
+                painterResource(id = R.drawable.logo),
+                contentDescription = "Logo",
+                modifier = Modifier
+                    .fillMaxWidth(.32f)
+                    .fillMaxHeight(.12f)
 
-        )}
+            )
+        }
+
         HorizontalDivider(
             modifier = Modifier.padding(0.dp),
             color = Color.Gray,
@@ -52,36 +60,79 @@ fun Onboarding() {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
+                .height(50.dp)
                 .background(Color(0xFF495E57))
 
-        ){Text(text = "Let's get to know you", fontSize = 20.sp)}
+        ) { Text(text = "Let's get to know you", fontSize = 20.sp) }
 
         // Textfelder für Benutzereingaben
-        var firstName by remember { mutableStateOf("") }
-        var lastName by remember { mutableStateOf("") }
-        var email by remember { mutableStateOf("") }
+        Column(modifier = Modifier.padding(16.dp)) {
+            var firstName by remember { mutableStateOf("") }
+            var lastName by remember { mutableStateOf("") }
+            var email by remember { mutableStateOf("") }
 
-        TextField(value = firstName, onValueChange = { firstName = it }, label = { Text("First Name") })
-        TextField(value = lastName, onValueChange = { lastName = it }, label = { Text("Last Name") })
-        TextField(value = email, onValueChange = { email = it }, label = { Text("Email") })
+            TextField(
+                value = firstName,
+                onValueChange = { firstName = it },
+                label = { Text("First Name") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                shape = RoundedCornerShape(8.dp)
+            )
+            TextField(
+                value = lastName, onValueChange = { lastName = it }, label = { Text("Last Name") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                shape = RoundedCornerShape(8.dp)
+            )
+            TextField(
+                value = email, onValueChange = { email = it }, label = { Text("Email") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                shape = RoundedCornerShape(8.dp)
+            )
 
-        // Registrieren-Button
-        Button(onClick = { /* Registrierungscode hier */ },
-            colors = ButtonDefaults.buttonColors(Color(0xFFF4CE14)),
-            shape = RoundedCornerShape(10.dp),
-            //modifier = Modifier
-             //  .align(Alignment.Center)
-            ) {
-            Text("Register")
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Registrieren-Button
+            Button(onClick = {
+                val context = LocalContext.current
+                val sharedPreferences: SharedPreferences =
+                    context.getSharedPreferences("LittleLemon", Context.MODE_PRIVATE)
+
+                if (firstName.isBlank() || lastName.isBlank() || email.isBlank()) {
+                    Toast.makeText(
+                        context,
+                        "Registrierung fehlgeschlagen. Bitte geben Sie alle Daten ein.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+                    // Speichere die Werte in SharedPreferences
+                    with(sharedPreferences.edit()) {
+                        putString("firstName", firstName)
+                        putString("lastName", lastName)
+                        putString("email", email)
+                        commit()
+                    }
+
+                    // Navigiere zur Home-Seite
+                    navController.navigate("Home")
+                }
+            }) {
+                Text("Register")
+            }
         }
     }
 }
 
 
+    @Preview(showBackground = true)
+    @Composable
+    fun PreviewOnboarding() {
+        val navController = rememberNavController()
+        Onboarding(navController = navController)
+    }
 
-
-@Preview(showBackground = true)
-@Composable
-fun PreviewOnboarding() {
-    Onboarding()
-}
