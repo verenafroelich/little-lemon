@@ -8,9 +8,9 @@ import androidx.navigation.compose.composable
 
 @Composable
 fun navigation(navController: NavHostController) {
-    var userLoggedIn = false //TODO: Use SharedReference "userLoggedIn"
+    var userRegistered = false
     var startDestination = Onboarding.route
-    if(userLoggedIn){
+    if(userRegistered){
         startDestination = Home.route
     }
     NavHost(
@@ -20,7 +20,7 @@ fun navigation(navController: NavHostController) {
         //{Onboarding.route} else {Home.route}
     ) {
         composable(Onboarding.route) {
-            Onboarding()
+            Onboarding(navController)
         }
         composable(Home.route) {
             Home()

@@ -7,9 +7,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.HorizontalDivider
@@ -29,15 +31,22 @@ import android.widget.Toast
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 
 @Composable
 fun Onboarding(navController: NavHostController) {
+    var firstName by remember { mutableStateOf("") }
+    var lastName by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
+    val textState = remember { mutableStateOf("") }
+
     Column {
         // Header mit Logo
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp)
+                //.padding(0.dp)
+                .padding(start = 16.dp, end = 16.dp, top = 0.dp, bottom = 0.dp)
         )
         {
             Image(
@@ -46,34 +55,38 @@ fun Onboarding(navController: NavHostController) {
                 modifier = Modifier
                     .fillMaxWidth(.32f)
                     .fillMaxHeight(.12f)
-
-            )
+                )
         }
 
-        HorizontalDivider(
-            modifier = Modifier.padding(0.dp),
+            HorizontalDivider(
+            modifier = Modifier.padding(start=30.dp, end=30.dp),
             color = Color.Gray,
             thickness = 1.dp
         )
+
 
         // Text zur Aufforderung
         Box(
             modifier = Modifier
                 .fillMaxWidth()
+                //.width(300.dp)
+                .padding(start = 30.dp, end = 30.dp)
                 .height(50.dp)
-                .background(Color(0xFF495E57))
+                .background(Color(0xFF495E57)),
 
-        ) { Text(text = "Let's get to know you", fontSize = 20.sp) }
+
+        )
+        Column(horizontalAlignment = Alignment.CenterHorizontally)
+        { Text(text = "Let's get to know you", fontSize = 20.sp
+            ) }
 
         // Textfelder für Benutzereingaben
-        Column(modifier = Modifier.padding(16.dp)) {
-            var firstName by remember { mutableStateOf("") }
-            var lastName by remember { mutableStateOf("") }
-            var email by remember { mutableStateOf("") }
-
+        Column(modifier = Modifier.padding(16.dp),
+               horizontalAlignment = Alignment.CenterHorizontally) {
+            //{Text(text = "Personal Information")}
             TextField(
-                value = firstName,
-                onValueChange = { firstName = it },
+                value = textState.value,
+                onValueChange = { textState.value = it },
                 label = { Text("First Name") },
                 modifier = Modifier
                     .fillMaxWidth()
@@ -81,26 +94,32 @@ fun Onboarding(navController: NavHostController) {
                 shape = RoundedCornerShape(8.dp)
             )
             TextField(
-                value = lastName, onValueChange = { lastName = it }, label = { Text("Last Name") },
+                value = textState.value, onValueChange = { textState.value = it }, label = { Text("Last Name") },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(16.dp),
+                    .padding(16.dp)
+                     ,
                 shape = RoundedCornerShape(8.dp)
             )
+
             TextField(
-                value = email, onValueChange = { email = it }, label = { Text("Email") },
+                value = textState.value, onValueChange = { textState.value = it }, label = { Text("Email") },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),
                 shape = RoundedCornerShape(8.dp)
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height (6.dp))
 
             // Registrieren-Button
-            Button(onClick = {
-                val context = LocalContext.current
-                val sharedPreferences: SharedPreferences =
+            val context = LocalContext.current
+            Button(modifier = Modifier.padding(top = 250.dp,start = 30.dp, end = 30.dp )
+                                      .fillMaxWidth(),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFF4CE14)),
+                    shape = RoundedCornerShape(8.dp),
+                   onClick = {
+                  val sharedPreferences: SharedPreferences =
                     context.getSharedPreferences("LittleLemon", Context.MODE_PRIVATE)
 
                 if (firstName.isBlank() || lastName.isBlank() || email.isBlank()) {
