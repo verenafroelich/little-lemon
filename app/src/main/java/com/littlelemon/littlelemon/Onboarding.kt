@@ -98,8 +98,9 @@ fun Onboarding(navController: NavHostController) {
             Spacer(modifier = Modifier.height(16.dp))
 
             // Registrieren-Button
+            val context = LocalContext.current
             Button(onClick = {
-                val context = LocalContext.current
+
                 val sharedPreferences: SharedPreferences =
                     context.getSharedPreferences("LittleLemon", Context.MODE_PRIVATE)
 
