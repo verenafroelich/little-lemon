@@ -8,20 +8,59 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
+import androidx.room.Room
 import com.littlelemon.littlelemon.ui.theme.LittleLemonTheme
+import io.ktor.client.HttpClient
+import io.ktor.client.call.body
+import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.request.get
+import io.ktor.http.ContentType
+import io.ktor.serialization.kotlinx.json.json
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.serialization.json.Json
+import kotlin.jvm.java
 
 class MainActivity : ComponentActivity() {
+    private val httpClient = HttpClient {
+        install(ContentNegotiation) {json(contentType = ContentType("text", "plain"))
+        }
+
+
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                // Verwenden Sie den httpClient, um die JSON-Daten abzurufen, Daten vom Netzwerk holen
+                val response: MenuNetwork =
+                    httpClient.get("https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")
+                        .body<MenuNetwork>()
+                // 2. Netzwerk-Daten in Room-Entities umwandeln
+                val items = response.menu.map { it.toMenuItem() }
+                //in Room-Datenbank speichern
+                val db = AppDatabase.getDatabase(applicationContext)
+                val menuItemDao = db.menuItemDao()
+
+                // Daten speichern
+                response.menu.forEach { menuItem ->
+                    println("Title: ${menuItem.title}, Price: ${menuItem.price}")
+                }
+            } catch (e: Exception) {
+                // Fehlerbehandlung
+                e.printStackTrace()
+            }
+        }
+    //UI anzeigen
         setContent {
             LittleLemonTheme {
+
                 Scaffold() {
                     Box(
                         modifier = Modifier
@@ -33,6 +72,11 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        httpClient.close()
     }
 }
 

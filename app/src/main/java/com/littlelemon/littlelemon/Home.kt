@@ -16,7 +16,7 @@ import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun Home(navController: NavHostController) {
-    Row (){
+    Row {
         Image(
             painterResource(id = R.drawable.logo),
             contentDescription = "Logo",

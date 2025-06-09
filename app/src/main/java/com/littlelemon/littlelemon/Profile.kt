@@ -51,9 +51,6 @@ fun Profile(navController: NavHostController) {
             )
         }
 
-
-
-
         // Text zur Aufforderung
         Box(
             modifier = Modifier

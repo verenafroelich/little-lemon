@@ -60,6 +60,7 @@ fun Onboarding(navController: NavHostController) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
+                .padding(start = 30.dp, end = 30.dp)
                 .height(50.dp)
                 .background(Color(0xFF495E57))
 
@@ -98,8 +99,9 @@ fun Onboarding(navController: NavHostController) {
             Spacer(modifier = Modifier.height(16.dp))
 
             // Registrieren-Button
+            val context = LocalContext.current
             Button(onClick = {
-                val context = LocalContext.current
+
                 val sharedPreferences: SharedPreferences =
                     context.getSharedPreferences("LittleLemon", Context.MODE_PRIVATE)
 
