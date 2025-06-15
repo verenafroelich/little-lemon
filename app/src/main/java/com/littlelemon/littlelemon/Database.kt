@@ -14,7 +14,7 @@ import androidx.room.RoomDatabase
 @Entity
 data class MenuItem(
     @PrimaryKey
-    val id: Int.Companion,
+    val id: Int,
     val title: String,
     val price: String,
     val description: String,
@@ -27,7 +27,7 @@ interface MenuItemDao{
     suspend fun getAllMenuItems(): List<MenuItem>
 
     @Insert
-    suspend fun saveMenuItem(menuItem: MenuItem)
+    suspend fun insertMenuItem(menuItem: MenuItem)
 
     @Delete
     suspend fun deleteMenuItem(menuItem: MenuItem)

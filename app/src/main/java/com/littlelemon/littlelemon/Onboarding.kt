@@ -29,6 +29,8 @@ import android.widget.Toast
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+
 
 @Composable
 fun Onboarding(navController: NavHostController) {
@@ -62,9 +64,11 @@ fun Onboarding(navController: NavHostController) {
                 .fillMaxWidth()
                 .padding(start = 30.dp, end = 30.dp)
                 .height(50.dp)
-                .background(Color(0xFF495E57))
+                .background(Color(0xFF495E57)),
+                contentAlignment = Alignment.Center
 
-        ) { Text(text = "Let's get to know you", fontSize = 20.sp) }
+        )
+        { Text(text = "Let's get to know you", fontSize = 20.sp, color = Color.Yellow) }
 
         // Textfelder für Benutzereingaben
         Column(modifier = Modifier.padding(16.dp)) {

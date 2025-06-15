@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
                         .body<MenuNetwork>()
                 // 2. Netzwerk-Daten in Room-Entities umwandeln
                 val items = response.menu.map { it.toMenuItem() }
-                //in Room-Datenbank speichern
+                //Datenbankinstanz abrufen
                 val db = AppDatabase.getDatabase(applicationContext)
                 val menuItemDao = db.menuItemDao()
 
@@ -52,6 +52,8 @@ class MainActivity : ComponentActivity() {
                 response.menu.forEach { menuItem ->
                     println("Title: ${menuItem.title}, Price: ${menuItem.price}")
                 }
+
+
             } catch (e: Exception) {
                 // Fehlerbehandlung
                 e.printStackTrace()
