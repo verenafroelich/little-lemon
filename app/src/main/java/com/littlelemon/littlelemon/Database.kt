@@ -37,6 +37,10 @@ interface MenuItemDao{
 abstract class AppDatabase : RoomDatabase() {
     abstract fun menuItemDao(): MenuItemDao
 
+    //Caro: Was soll das sein? Das erscheint mir hier alles komisch
+    //Caro: Ich würde das auskommentieren
+    //Caro: Das ist eine Abstrakte Klasse aus meiner Sicht sollte hier nichts passieren
+    //Caro: Zeile 51-55 gehört aus meiner Sicht in MainActivity
     companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null
