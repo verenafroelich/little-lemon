@@ -27,8 +27,10 @@ import kotlinx.serialization.json.Json
 import kotlin.jvm.java
 
 class MainActivity : ComponentActivity() {
+    //Caro: Korrektur: HttpClient(Android), Sonst super!
     private val httpClient = HttpClient {
-        install(ContentNegotiation) {json(contentType = ContentType("text", "plain"))
+        install(ContentNegotiation) {
+            json(contentType = ContentType("text", "plain"))
         }
 
 
@@ -36,19 +38,29 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        //Caro: viewModelScope.launch(Dispatchers.IO) {
+        //Caro: Siehe: https://developer.android.com/kotlin/coroutines?hl=de
         CoroutineScope(Dispatchers.IO).launch {
+            //Caro: Abschnitt soweit ok, du musst nur aufpassen, das wird aktuell jedes Mal gemacht.
+            //Caro: Wahrscheinlich wäre eine Abfrage, ob sich bereits etwas in der Datenbank befindet sinnvoll
+            //Caro: Prüfe erstmal, ob es zu Mehrfacheinträgen in deiner Datenbank kommt
             try {
+                //Gut
                 // Verwenden Sie den httpClient, um die JSON-Daten abzurufen, Daten vom Netzwerk holen
                 val response: MenuNetwork =
                     httpClient.get("https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")
                         .body<MenuNetwork>()
+                //Gut
                 // 2. Netzwerk-Daten in Room-Entities umwandeln
                 val items = response.menu.map { it.toMenuItem() }
+                //Caro: Wie in Database kommentiert bitte hier den Code von dort einfügen
                 //in Room-Datenbank speichern
                 val db = AppDatabase.getDatabase(applicationContext)
                 val menuItemDao = db.menuItemDao()
 
                 // Daten speichern
+                //Caro: Das druckt die Daten nur ->
+                //Caro: response.menu.forEach( menuItem -> menuItemDao.saveMenuItem(menuItem))
                 response.menu.forEach { menuItem ->
                     println("Title: ${menuItem.title}, Price: ${menuItem.price}")
                 }
