@@ -27,7 +27,7 @@ interface MenuItemDao{
     suspend fun getAllMenuItems(): List<MenuItem>
 
     @Insert
-    suspend fun insertMenuItem(menuItem: MenuItem)
+    suspend fun saveMenuItem(menuItem: MenuItem)
 
     @Delete
     suspend fun deleteMenuItem(menuItem: MenuItem)
@@ -41,7 +41,7 @@ abstract class AppDatabase : RoomDatabase() {
     //Caro: Ich würde das auskommentieren
     //Caro: Das ist eine Abstrakte Klasse aus meiner Sicht sollte hier nichts passieren
     //Caro: Zeile 51-55 gehört aus meiner Sicht in MainActivity
-    companion object {
+    /*companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null
 
@@ -57,5 +57,6 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
     }
+    */
 }
 

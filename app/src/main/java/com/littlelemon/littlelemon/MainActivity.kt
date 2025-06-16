@@ -16,6 +16,7 @@ import androidx.room.Room
 import com.littlelemon.littlelemon.ui.theme.LittleLemonTheme
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
+import io.ktor.client.engine.HttpClientEngine
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.request.get
 import io.ktor.http.ContentType
@@ -23,11 +24,9 @@ import io.ktor.serialization.kotlinx.json.json
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.serialization.json.Json
-import kotlin.jvm.java
 
-class MainActivity : ComponentActivity() {
-    private val httpClient = HttpClient {
+class MainActivity(Android: HttpClientEngine) : ComponentActivity() {
+    private val httpClient = HttpClient(Android) {
         install(ContentNegotiation) {json(contentType = ContentType("text", "plain"))
         }
 
@@ -45,14 +44,18 @@ class MainActivity : ComponentActivity() {
                 // 2. Netzwerk-Daten in Room-Entities umwandeln
                 val items = response.menu.map { it.toMenuItem() }
                 //Datenbankinstanz abrufen
-                val db = AppDatabase.getDatabase(applicationContext)
+               // val db = AppDatabase.getDatabase(applicationContext)
+                val db = Room.databaseBuilder(
+                    applicationContext.applicationContext,
+                    AppDatabase::class.java,
+                    "menu.db"
+                ).build()
                 val menuItemDao = db.menuItemDao()
-
                 // Daten speichern
-                response.menu.forEach { menuItem ->
-                    println("Title: ${menuItem.title}, Price: ${menuItem.price}")
+                items.forEach { menuItem ->
+                    //println("Title: ${menuItem.title}, Price: ${menuItem.price}")
+                    menuItemDao.saveMenuItem(menuItem)
                 }
-
 
             } catch (e: Exception) {
                 // Fehlerbehandlung
