@@ -60,7 +60,6 @@ class MainActivity(Android: HttpClientEngine) : ComponentActivity() {
             } catch (e: Exception) {
                 // Fehlerbehandlung
                 e.printStackTrace()
-
             }
         }
     //UI anzeigen
