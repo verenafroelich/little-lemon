@@ -58,6 +58,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation (libs.ktor.client.content.negotiation)
     implementation("androidx.room:room-runtime:2.7.1")
+    implementation ("com.github.bumptech.glide:compose:1.0.0-alpha.1")
+    implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
     kapt("androidx.room:room-compiler:2.7.1")
     implementation("androidx.room:room-ktx:2.7.1")
     androidTestImplementation(libs.androidx.junit)

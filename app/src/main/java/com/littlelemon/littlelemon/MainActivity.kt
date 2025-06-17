@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.MutableLiveData
 import androidx.navigation.compose.rememberNavController
 import androidx.room.Room
 import com.littlelemon.littlelemon.ui.theme.LittleLemonTheme
@@ -29,7 +30,6 @@ class MainActivity(Android: HttpClientEngine) : ComponentActivity() {
     private val httpClient = HttpClient(Android) {
         install(ContentNegotiation) {json(contentType = ContentType("text", "plain"))
         }
-
 
     }
     override fun onCreate(savedInstanceState: Bundle?) {
