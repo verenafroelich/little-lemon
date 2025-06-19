@@ -124,7 +124,7 @@ fun Profile(navController: NavHostController) {
             Button(modifier = Modifier.padding(top = 250.dp,start = 30.dp, end = 30.dp )
                 .fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFF4CE14)),
-                shape = RoundedCornerShape(8.dp),
+                shape = RoundedCornerShape(20.dp),
                 onClick = {
                     //delete firstname, lastname from shared preferences
                     val editor = sharedPreferences.edit()

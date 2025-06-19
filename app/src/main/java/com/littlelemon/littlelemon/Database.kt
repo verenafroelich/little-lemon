@@ -1,11 +1,13 @@
 package com.littlelemon.littlelemon
 
 import android.content.Context
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Database
 import androidx.room.Delete
 import androidx.room.Entity
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.PrimaryKey
 import androidx.room.Query
 import androidx.room.Room
@@ -24,9 +26,9 @@ data class MenuItem(
 @Dao
 interface MenuItemDao{
     @Query("SELECT * FROM MenuItem")
-    suspend fun getAllMenuItems(): List<MenuItem>
+    fun getAllMenuItems(): LiveData<List<MenuItem>>  // ohne suspend!
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveMenuItem(menuItem: MenuItem)
 
     @Delete
@@ -41,7 +43,7 @@ abstract class AppDatabase : RoomDatabase() {
     //Caro: Ich würde das auskommentieren
     //Caro: Das ist eine Abstrakte Klasse aus meiner Sicht sollte hier nichts passieren
     //Caro: Zeile 51-55 gehört aus meiner Sicht in MainActivity
-    /*companion object {
+    companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null
 
@@ -57,6 +59,6 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
     }
-    */
+
 }
 

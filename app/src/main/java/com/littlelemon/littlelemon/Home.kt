@@ -22,11 +22,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
@@ -40,14 +42,17 @@ import com.bumptech.glide.integration.compose.GlideImage
 
 @Composable
 fun Home(navController: NavHostController) {
-    val menuItems = remember { val menuItems by db.menuDao().getAllMenuItems()
-        observeAsState(emptyList()) }
+    //AFval menuItems by db.menuDao().getAllMenuItems()
+    //AF    .observeAsState(emptyList())
+    val context = LocalContext.current
+    val db = remember { AppDatabase.getDatabase(context) }
+    val menuItems by db.menuItemDao().getAllMenuItems().observeAsState(emptyList())
+
     Column(
         modifier = Modifier
             .padding(top = 16.dp, bottom = 5.dp)
             .fillMaxWidth()
     ) {
-        var searchPhrase by remember { mutableStateOf(TextFieldValue("")) }
         Row {
             Image(
                 painterResource(id = R.drawable.logo),
@@ -110,15 +115,16 @@ fun Home(navController: NavHostController) {
             }
          }
 
-        MenuItems(menuItems = MenuItems())
+        // MenuItems(menuItems = MenuItems())
 
+        var searchPhrase by remember { mutableStateOf("") }
         OutlinedTextField(
             value = searchPhrase,
             onValueChange = { searchPhrase = it },
-            placeholder = { Text(text = "Search") },
+            placeholder = { Text(text = "Enter Search Phrase") },
             leadingIcon = {
                 Icon(
-                    imageVector = Icons.Default.Search, // Verwenden Sie das Standard-Such-Icon
+                    imageVector = Icons.Default.Search,
                     contentDescription = "Search Icon"
                 )
             },
@@ -127,16 +133,22 @@ fun Home(navController: NavHostController) {
              .padding(start = 15.dp, end = 15.dp),
             shape = RoundedCornerShape(18.dp)
         )
+        val menuItems = menuItems.filter { item ->
+            searchPhrase.isBlank() || item.title.contains(searchPhrase, ignoreCase = true)
+            }
         }
+
+
 }
 
 @Composable
-fun MenuItems(menuItems: Unit){
+fun MenuItems(menuItems: List<MenuItem>) {
 
     Column {
         for(item in menuItems){
+
             //MenuItems(menuItems)
-            MenuItemView(menuItems)
+            MenuItemView(item)
         }
     }
 }
