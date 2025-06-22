@@ -11,7 +11,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.MutableLiveData
 import androidx.navigation.compose.rememberNavController
 import androidx.room.Room
 import com.littlelemon.littlelemon.ui.theme.LittleLemonTheme
@@ -26,8 +25,10 @@ import io.ktor.serialization.kotlinx.json.json
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import android.util.Log
 
-class MainActivity() : ComponentActivity() {
+
+class MainActivity: ComponentActivity() {
     private val client = HttpClient(Android) {
         install(ContentNegotiation) {
             json(contentType = ContentType("text", "plain"))
@@ -35,15 +36,22 @@ class MainActivity() : ComponentActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("DEBUG", "MainActivity started")
+
         enableEdgeToEdge()
         CoroutineScope(Dispatchers.IO).launch {
-            try {
+              try {
                 // httpClient verwenden, um die JSON-Daten abzurufen, Daten vom Netzwerk holen
                 val response: MenuNetwork =
-                    httpClient.get("https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")
+                    client.get("https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")
                         .body<MenuNetwork>()
+                Log.d("DEBUG", "Network response size: ${response.menu.size}")
                 // 2. Netzwerk-Daten in Room-Entities umwandeln
-                val items = response.menu.map { it.toMenuItem() }
+                  Log.d("DEBUG", "JSON Response: ${response.menu}")
+
+                  val items = response.menu.map { it.toMenuItem() }
+                Log.d("DEBUG", "Items mapped: ${items.size}")
+                Log.d("Network", "Fetched ${items.size} items from API")
                 //Datenbankinstanz abrufen
                 val db = AppDatabase.getDatabase(applicationContext)
                 //AF: val db = Room.databaseBuilder(
@@ -55,8 +63,13 @@ class MainActivity() : ComponentActivity() {
                 val menuItemDao = db.menuItemDao()
                 // Daten speichern
                 items.forEach { menuItem ->
+                    Log.d("DEBUG", "Saving item: ${menuItem.title}")
                     menuItemDao.saveMenuItem(menuItem)
-                }
+                    Log.d("MainActivity", "Save ${items.size} Einträge in DB")
+                    }
+                val itemsInDb = menuItemDao.getAllMenuItemsNow()
+                Log.d("MainActivity", "→ In DB nach Save: ${itemsInDb.size} Einträge")
+
 
             } catch (e: Exception) {
                 // Fehlerbehandlung
@@ -82,7 +95,7 @@ class MainActivity() : ComponentActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        httpClient.close()
+        client.close()
     }
 }
 

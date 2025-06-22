@@ -123,11 +123,10 @@ fun Onboarding(navController: NavHostController) {
                         putString("email", email)
                         commit()
                     }
-
                     // Navigiere zur Home-Seite
                     navController.navigate("Home")
                 }
-            }) {
+            }, modifier = Modifier.padding(start = 36.dp)) {
                 Text("Register")
             }
         }

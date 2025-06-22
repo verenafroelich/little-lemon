@@ -27,22 +27,20 @@ data class MenuItem(
 interface MenuItemDao{
     @Query("SELECT * FROM MenuItem")
     fun getAllMenuItems(): LiveData<List<MenuItem>>  // ohne suspend!
+    @Query("SELECT * FROM MenuItem")
+    fun getAllMenuItemsNow(): List<MenuItem>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun saveMenuItem(menuItem: MenuItem)
+    suspend fun saveMenuItem(item: MenuItem)
 
     @Delete
     suspend fun deleteMenuItem(menuItem: MenuItem)
 }
 
-@Database(entities = [MenuItem::class], version = 1)
+@Database(entities = [MenuItem::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun menuItemDao(): MenuItemDao
 
-    //Caro: Was soll das sein? Das erscheint mir hier alles komisch
-    //Caro: Ich würde das auskommentieren
-    //Caro: Das ist eine Abstrakte Klasse aus meiner Sicht sollte hier nichts passieren
-    //Caro: Zeile 51-55 gehört aus meiner Sicht in MainActivity
     companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null

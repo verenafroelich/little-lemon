@@ -1,5 +1,6 @@
 package com.littlelemon.littlelemon
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -42,12 +43,11 @@ import com.bumptech.glide.integration.compose.GlideImage
 
 @Composable
 fun Home(navController: NavHostController) {
-    //AFval menuItems by db.menuDao().getAllMenuItems()
-    //AF    .observeAsState(emptyList())
     val context = LocalContext.current
     val db = remember { AppDatabase.getDatabase(context) }
     val menuItems by db.menuItemDao().getAllMenuItems().observeAsState(emptyList())
-
+    Log.d("HomeScreen", "MenuItems loaded: ${menuItems.size}")
+    Log.d("DEBUG", "MenuItems in DB: ${menuItems.size}")
     Column(
         modifier = Modifier
             .padding(top = 16.dp, bottom = 5.dp)
@@ -68,13 +68,13 @@ fun Home(navController: NavHostController) {
                     .fillMaxWidth(.32f)
                     .fillMaxHeight(.12f)
                     .clickable(onClick = {
-                        navController.navigate("Profile")
+                 navController.navigate("Profile")
                     })
             )
         }
         Box(
             modifier = Modifier
-                .padding(top = 16.dp, bottom = 16.dp)
+                .padding(top = 16.dp, bottom = 36.dp)
                 .fillMaxWidth()
                 .background(color = Color(0xFF495E57))
 
@@ -99,7 +99,7 @@ fun Home(navController: NavHostController) {
                 Text(
                     "We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist",
                     fontSize = 16.sp,
-                    modifier = Modifier.padding(start = 16.dp, top = 100.dp, bottom = 10.dp)
+                    modifier = Modifier.padding(start = 16.dp, top = 100.dp)
                         .fillMaxWidth(.32f),
                         color = Color.White
                 )
@@ -108,14 +108,13 @@ fun Home(navController: NavHostController) {
                     contentDescription = "Hero",
                     modifier = Modifier
                         .fillMaxWidth(.85f)
-                        .fillMaxHeight(.52f)
+                        .fillMaxHeight(.32f)
+                        .padding(bottom = 26.dp)
                         .offset(y = 106.dp),
                     alignment = Alignment.CenterEnd,
                 )
             }
          }
-
-        // MenuItems(menuItems = MenuItems())
 
         var searchPhrase by remember { mutableStateOf("") }
         OutlinedTextField(
@@ -133,12 +132,13 @@ fun Home(navController: NavHostController) {
              .padding(start = 15.dp, end = 15.dp),
             shape = RoundedCornerShape(18.dp)
         )
-        val menuItems = menuItems.filter { item ->
+        val filteredItems = menuItems.filter { item ->
             searchPhrase.isBlank() || item.title.contains(searchPhrase, ignoreCase = true)
             }
+
+
+        MenuItems(filteredItems)
         }
-
-
 }
 
 @Composable
@@ -164,8 +164,8 @@ fun MenuItemView(item: MenuItem) {
             contentDescription = item.title, // Beschreibung für Barrierefreiheit
             modifier = Modifier
                 .size(100.dp) // Größe des Bildes
-                .clip(RoundedCornerShape(8.dp)), // Abgerundete Ecken
-            contentScale = ContentScale.Crop // Bild zuschneiden
+                .clip(RoundedCornerShape(8.dp)),
+            contentScale = ContentScale.Crop //Bild zuschneiden
         )
     }
 }
