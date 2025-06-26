@@ -26,6 +26,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import android.util.Log
+import androidx.lifecycle.lifecycleScope
 
 
 class MainActivity: ComponentActivity() {
@@ -37,49 +38,47 @@ class MainActivity: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("DEBUG", "MainActivity started")
+        lifecycleScope.launch(Dispatchers.IO) {
+            // httpClient verwenden, um die JSON-Daten abzurufen, Daten vom Netzwerk holen
+            val response =
+                client.get("https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")
+                    .body<MenuNetwork>()
+            Log.d("DEBUG", "Network response size: ${response}")
+            // 2. Netzwerk-Daten in Room-Entities umwandeln
+            Log.d("DEBUG", "JSON Response: ${response.menu}")
 
-        enableEdgeToEdge()
-        CoroutineScope(Dispatchers.IO).launch {
-              try {
-                // httpClient verwenden, um die JSON-Daten abzurufen, Daten vom Netzwerk holen
-                val response: MenuNetwork =
-                    client.get("https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")
-                        .body<MenuNetwork>()
-                Log.d("DEBUG", "Network response size: ${response.menu.size}")
-                // 2. Netzwerk-Daten in Room-Entities umwandeln
-                  Log.d("DEBUG", "JSON Response: ${response.menu}")
+            val items = response.menu.map { it.toMenuItem() }
+            Log.d("DEBUG", "Items mapped: ${items.size}")
+            Log.d("Network", "Fetched ${items.size} items from API")
+            //Datenbankinstanz abrufen
+            val db = AppDatabase.getDatabase(applicationContext)
+            //AF: val db = Room.databaseBuilder(
+            //AF:     applicationContext.applicationContext,
+            //AF:     AppDatabase::class.java,
+            //AF:     "menu.db"
+            //AF: ).build()
 
-                  val items = response.menu.map { it.toMenuItem() }
-                Log.d("DEBUG", "Items mapped: ${items.size}")
-                Log.d("Network", "Fetched ${items.size} items from API")
-                //Datenbankinstanz abrufen
-                val db = AppDatabase.getDatabase(applicationContext)
-                //AF: val db = Room.databaseBuilder(
-                //AF:     applicationContext.applicationContext,
-                //AF:     AppDatabase::class.java,
-                //AF:     "menu.db"
-                //AF: ).build()
-
-                val menuItemDao = db.menuItemDao()
-                // Daten speichern
-                items.forEach { menuItem ->
-                    Log.d("DEBUG", "Saving item: ${menuItem.title}")
-                    menuItemDao.saveMenuItem(menuItem)
-                    Log.d("MainActivity", "Save ${items.size} Einträge in DB")
-                    }
-                val itemsInDb = menuItemDao.getAllMenuItemsNow()
-                Log.d("MainActivity", "→ In DB nach Save: ${itemsInDb.size} Einträge")
-
-
-            } catch (e: Exception) {
-                // Fehlerbehandlung
-                e.printStackTrace()
+            val menuItemDao = db.menuItemDao()
+            // Daten speichern
+            items.forEach { menuItem ->
+                Log.d("DEBUG", "Saving item: ${menuItem.title}")
+                menuItemDao.saveMenuItem(menuItem)
+                Log.d("MainActivity", "Save ${items.size} Einträge in DB")
             }
+            //val itemsInDb = menuItemDao.getAllMenuItemsNow()
+            //Log.d("MainActivity", "→ In DB nach Save: ${itemsInDb.size} Einträge")
+
+
+            //} catch (e: Exception) {
+            // Fehlerbehandlung
+            //    Log.d("MainActivity", "Fehler")
+            //    e.printStackTrace()
+            //}
         }
-    //UI anzeigen
+        //UI anzeigen
         setContent {
             LittleLemonTheme {
-
+                //enableEdgeToEdge()
                 Scaffold() {
                     Box(
                         modifier = Modifier

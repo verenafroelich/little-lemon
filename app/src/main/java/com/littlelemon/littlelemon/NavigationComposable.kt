@@ -7,8 +7,8 @@ import androidx.navigation.compose.composable
 
 
 @Composable
-fun navigation(navController: NavHostController) {
-    var userRegistered = false
+fun navigation(navController: NavHostController, userRegistered: Boolean = false) {
+    //var userRegistered = false
     var startDestination = Onboarding.route
     if(userRegistered){
         startDestination = Home.route

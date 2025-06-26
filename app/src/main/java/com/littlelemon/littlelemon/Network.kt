@@ -15,6 +15,7 @@ data class MenuNetwork (
         @SerialName("description") val description: String,
         @SerialName("price") val price: String,
         @SerialName("image") val image: String,
+        @SerialName("category") val category: String
     ) {
         fun toMenuItem(): MenuItem {
             return MenuItem(
