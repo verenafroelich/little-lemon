@@ -42,7 +42,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -55,21 +54,25 @@ dependencies {
     implementation(libs.androidx.navigation.compose.android)
     testImplementation(libs.junit)
     implementation ("io.ktor:ktor-serialization-kotlinx-json:2.3.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1")
     implementation("io.ktor:ktor-client-android:2.3.3")
     implementation ("io.ktor:ktor-client-content-negotiation:2.3.3")
-    implementation("androidx.room:room-runtime:2.7.1")
+    implementation("androidx.room:room-runtime:2.7.2")
     implementation("androidx.compose.runtime:runtime-livedata")
-    implementation ("com.github.bumptech.glide:compose:1.0.0-alpha.1")
     implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
-    kapt("androidx.room:room-compiler:2.7.1")
-    implementation("androidx.room:room-ktx:2.7.1")
+    implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
+    kapt("androidx.room:room-compiler:2.7.2")
+    implementation("io.ktor:ktor-serialization-kotlinx:2.3.3")
+    implementation("io.ktor:ktor-client-serialization:2.3.3")
+    implementation(libs.ktor.serialization.kotlinx)
+    implementation("androidx.room:room-ktx:2.7.2")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    }
+
+}

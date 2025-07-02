@@ -1,0 +1,421 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\dba081cd05b6966f3fe16243089127e2\transformed\navigation-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0f3d1acd97485ba05d9b8a9841d83246\transformed\navigation-common-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-compose-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c8be7d5f3abb20883ef47134ba559812\transformed\navigation-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:compose:1.0.0-beta01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\5d08d1b22fd60afe37970956a0e976f4\transformed\compose-1.0.0-beta01\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.3.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\58722227847cd1d76ab24d8c597177df\transformed\material3-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\cf79cfd4d7981cbc8be9ab50c213aaa3\transformed\material-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\dec783e42efab40a2a76d27e2c844cc9\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6c9e0bdc015c6fba270f30574f4b5e2c\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\32df27bc310f1af7535d332b8a8e3210\transformed\foundation-layout-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\aa104c69161f89a14d9974c34c933e95\transformed\animation-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\8eb33b4b84d119a0d080126e3f6ad3e3\transformed\animation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\358ca9a27c6fa74cbb64a5974bc038f7\transformed\ui-tooling-data-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\25c4505b1f61726173100d77d1c18a63\transformed\ui-util-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1a4f04bdd73a7911750c8693230c48e7\transformed\ui-unit-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\72c4aefdabe48ea5429632432f57a3ce\transformed\ui-text-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d676d9356c9d2061be651bac2f2e7fc9\transformed\ui-geometry-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6d4b8f8e8a772262b532b424cd2ae22c\transformed\ui-tooling-preview-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c607e3e407bfb720f73869d34827a972\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\869f78d8e49e858826bd724bb53b5249\transformed\activity-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:ktx:1.0.0-beta01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\2c6ff60d55a2d34a8d30b090322eb932\transformed\ktx-1.0.0-beta01\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:recyclerview-integration:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ab59860d5752a8aa5040422c1035a239\transformed\recyclerview-integration-5.0.0-rc01\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:glide:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\85dfdaddbb2ea58967a3479b66d02483\transformed\glide-5.0.0-rc01\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.6.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d7bf43973e2b51a3389264e622b3d213\transformed\fragment-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\94a1f5505c2cb1a7090273cd450ed73b\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\a7314e9b37533494ea07c17e8d707024\transformed\graphics-path-1.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e7765c060f1844f0a2f626d870398471\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\f0f57927d0711fcaefb9e3a510d24f14\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0188c1742ab06f26df2a0cdb129c66ae\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\4eed754492240d8d5c44d98566bbf1ac\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\7368719ebc22528a65d0fb29fc32be79\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\baf0acae3a62b81940817458da46dbcf\transformed\lifecycle-livedata-core-ktx-2.9.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\81a084c191de759f686d3570621deb1b\transformed\lifecycle-livedata-core-2.9.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\70d127eabbf3533406ac84d54268cf6e\transformed\lifecycle-viewmodel-2.9.1\AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\428bd9a4dd08a045c8aec3cd178fea8d\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\daeb87d485b4266d9cafb7b4bd5c0f1e\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\73c0d5a6d2e4a712a5af6e3a5fb666f3\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0d124dd9476597e08b1ac83e4fe516e1\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\3b5ca7bf9c1666391a3fd0cf2df66686\transformed\savedstate-ktx-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-android:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\08c1615b55c44617383003ba3f6cc344\transformed\savedstate-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\634525c2270e7c04f30bf00372c096f6\transformed\savedstate-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c16e244a1c7e055eca58931d56bda4b4\transformed\runtime-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\77d14138de5122cc19b66242bf86df4f\transformed\runtime-saveable-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-livedata:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\f123f6b09bc99d5b989cf0a29258f6ec\transformed\runtime-livedata-1.8.3\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\b869776a14539885f449303ac1f99263\transformed\lifecycle-livedata-2.9.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\b1a3d97af97e9e7373c9b20cbdf0e3b1\transformed\lifecycle-viewmodel-ktx-2.9.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ddf7c5c5a84c13de4232a7def985b236\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\485b8fe9ea0d66d27674f94614b2154a\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6edf01a25489249c240ab04369149ccb\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\3dcd149500774c39286fac0a3a8d2352\transformed\ui-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:17:1-29:12
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\589a2a214dbb3c91280eabb952054176\transformed\activity-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-compose:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\70b2ab690fdd08e48feaffe23f780a75\transformed\activity-compose-1.10.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\af0975a911e995cba0c16271ee76eff8\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\188a9f1ae142785497eb6ce88692d316\transformed\core-ktx-1.16.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\a815058944953ce5c96a2fdd8a81201d\transformed\room-ktx-2.7.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\edf6a732dc496faf89c2952a2a029bb3\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c4562d00a60af35088ccf50d25eab7d1\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\11f6dda61690c5332fc45b740dbac85d\transformed\sqlite-framework-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-android:2.5.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d756ac491476b4124cb55e1714ea6c04\transformed\sqlite-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\57e4b69b2f2914f24678a98e976b627b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1934ec42aa73163f8189765af611a963\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c4dfdca8f3e243a39c893707128223d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\069d5c2fa0a67e88091aaf21f4d36e24\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\90214cb11b6bdd488710a0d87912b021\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\2404a5d511caf5f38c6c720e7b834970\transformed\gifdecoder-5.0.0-rc01\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e4577b7c6ce5f59acd53c2e9033a2903\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:5:5-26:19
+INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:5:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:22:5-27:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:22:5-27:19
+MERGED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\57e4b69b2f2914f24678a98e976b627b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\57e4b69b2f2914f24678a98e976b627b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c4dfdca8f3e243a39c893707128223d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c4dfdca8f3e243a39c893707128223d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:10:9-41
+	android:fullBackupContent
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:8:9-54
+	android:roundIcon
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:11:9-54
+	tools:targetApi
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:14:9-29
+	android:icon
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:13:9-49
+	android:dataExtractionRules
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:7:9-65
+activity#com.littlelemon.littlelemon.MainActivity
+ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:15:9-25:20
+	android:label
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:18:13-45
+	android:exported
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:17:13-36
+	android:theme
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:19:13-53
+	android:name
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml:23:27-74
+uses-sdk
+INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\dba081cd05b6966f3fe16243089127e2\transformed\navigation-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\dba081cd05b6966f3fe16243089127e2\transformed\navigation-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0f3d1acd97485ba05d9b8a9841d83246\transformed\navigation-common-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0f3d1acd97485ba05d9b8a9841d83246\transformed\navigation-common-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-compose-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c8be7d5f3abb20883ef47134ba559812\transformed\navigation-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose-android:2.9.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c8be7d5f3abb20883ef47134ba559812\transformed\navigation-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:compose:1.0.0-beta01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\5d08d1b22fd60afe37970956a0e976f4\transformed\compose-1.0.0-beta01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:compose:1.0.0-beta01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\5d08d1b22fd60afe37970956a0e976f4\transformed\compose-1.0.0-beta01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\58722227847cd1d76ab24d8c597177df\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.3.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\58722227847cd1d76ab24d8c597177df\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\cf79cfd4d7981cbc8be9ab50c213aaa3\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\cf79cfd4d7981cbc8be9ab50c213aaa3\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\dec783e42efab40a2a76d27e2c844cc9\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\dec783e42efab40a2a76d27e2c844cc9\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6c9e0bdc015c6fba270f30574f4b5e2c\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6c9e0bdc015c6fba270f30574f4b5e2c\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\32df27bc310f1af7535d332b8a8e3210\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\32df27bc310f1af7535d332b8a8e3210\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\aa104c69161f89a14d9974c34c933e95\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\aa104c69161f89a14d9974c34c933e95\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\8eb33b4b84d119a0d080126e3f6ad3e3\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\8eb33b4b84d119a0d080126e3f6ad3e3\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\358ca9a27c6fa74cbb64a5974bc038f7\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\358ca9a27c6fa74cbb64a5974bc038f7\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\25c4505b1f61726173100d77d1c18a63\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\25c4505b1f61726173100d77d1c18a63\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1a4f04bdd73a7911750c8693230c48e7\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1a4f04bdd73a7911750c8693230c48e7\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\72c4aefdabe48ea5429632432f57a3ce\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\72c4aefdabe48ea5429632432f57a3ce\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d676d9356c9d2061be651bac2f2e7fc9\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d676d9356c9d2061be651bac2f2e7fc9\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6d4b8f8e8a772262b532b424cd2ae22c\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6d4b8f8e8a772262b532b424cd2ae22c\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c607e3e407bfb720f73869d34827a972\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c607e3e407bfb720f73869d34827a972\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\869f78d8e49e858826bd724bb53b5249\transformed\activity-ktx-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\869f78d8e49e858826bd724bb53b5249\transformed\activity-ktx-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:ktx:1.0.0-beta01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\2c6ff60d55a2d34a8d30b090322eb932\transformed\ktx-1.0.0-beta01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:ktx:1.0.0-beta01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\2c6ff60d55a2d34a8d30b090322eb932\transformed\ktx-1.0.0-beta01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:recyclerview-integration:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ab59860d5752a8aa5040422c1035a239\transformed\recyclerview-integration-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:recyclerview-integration:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ab59860d5752a8aa5040422c1035a239\transformed\recyclerview-integration-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\85dfdaddbb2ea58967a3479b66d02483\transformed\glide-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\85dfdaddbb2ea58967a3479b66d02483\transformed\glide-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.6.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d7bf43973e2b51a3389264e622b3d213\transformed\fragment-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d7bf43973e2b51a3389264e622b3d213\transformed\fragment-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\94a1f5505c2cb1a7090273cd450ed73b\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\94a1f5505c2cb1a7090273cd450ed73b\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\a7314e9b37533494ea07c17e8d707024\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\a7314e9b37533494ea07c17e8d707024\transformed\graphics-path-1.0.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e7765c060f1844f0a2f626d870398471\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e7765c060f1844f0a2f626d870398471\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\f0f57927d0711fcaefb9e3a510d24f14\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\f0f57927d0711fcaefb9e3a510d24f14\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0188c1742ab06f26df2a0cdb129c66ae\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0188c1742ab06f26df2a0cdb129c66ae\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\4eed754492240d8d5c44d98566bbf1ac\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\4eed754492240d8d5c44d98566bbf1ac\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\7368719ebc22528a65d0fb29fc32be79\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\7368719ebc22528a65d0fb29fc32be79\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\baf0acae3a62b81940817458da46dbcf\transformed\lifecycle-livedata-core-ktx-2.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\baf0acae3a62b81940817458da46dbcf\transformed\lifecycle-livedata-core-ktx-2.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\81a084c191de759f686d3570621deb1b\transformed\lifecycle-livedata-core-2.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\81a084c191de759f686d3570621deb1b\transformed\lifecycle-livedata-core-2.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\70d127eabbf3533406ac84d54268cf6e\transformed\lifecycle-viewmodel-2.9.1\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\70d127eabbf3533406ac84d54268cf6e\transformed\lifecycle-viewmodel-2.9.1\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\428bd9a4dd08a045c8aec3cd178fea8d\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\428bd9a4dd08a045c8aec3cd178fea8d\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\daeb87d485b4266d9cafb7b4bd5c0f1e\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\daeb87d485b4266d9cafb7b4bd5c0f1e\transformed\lifecycle-runtime-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\73c0d5a6d2e4a712a5af6e3a5fb666f3\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\73c0d5a6d2e4a712a5af6e3a5fb666f3\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0d124dd9476597e08b1ac83e4fe516e1\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\0d124dd9476597e08b1ac83e4fe516e1\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\3b5ca7bf9c1666391a3fd0cf2df66686\transformed\savedstate-ktx-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\3b5ca7bf9c1666391a3fd0cf2df66686\transformed\savedstate-ktx-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\08c1615b55c44617383003ba3f6cc344\transformed\savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\08c1615b55c44617383003ba3f6cc344\transformed\savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\634525c2270e7c04f30bf00372c096f6\transformed\savedstate-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\634525c2270e7c04f30bf00372c096f6\transformed\savedstate-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c16e244a1c7e055eca58931d56bda4b4\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c16e244a1c7e055eca58931d56bda4b4\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\77d14138de5122cc19b66242bf86df4f\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\77d14138de5122cc19b66242bf86df4f\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\f123f6b09bc99d5b989cf0a29258f6ec\transformed\runtime-livedata-1.8.3\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\f123f6b09bc99d5b989cf0a29258f6ec\transformed\runtime-livedata-1.8.3\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\b869776a14539885f449303ac1f99263\transformed\lifecycle-livedata-2.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\b869776a14539885f449303ac1f99263\transformed\lifecycle-livedata-2.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\b1a3d97af97e9e7373c9b20cbdf0e3b1\transformed\lifecycle-viewmodel-ktx-2.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\b1a3d97af97e9e7373c9b20cbdf0e3b1\transformed\lifecycle-viewmodel-ktx-2.9.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ddf7c5c5a84c13de4232a7def985b236\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ddf7c5c5a84c13de4232a7def985b236\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\485b8fe9ea0d66d27674f94614b2154a\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\485b8fe9ea0d66d27674f94614b2154a\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6edf01a25489249c240ab04369149ccb\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\6edf01a25489249c240ab04369149ccb\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\3dcd149500774c39286fac0a3a8d2352\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\3dcd149500774c39286fac0a3a8d2352\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\589a2a214dbb3c91280eabb952054176\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\589a2a214dbb3c91280eabb952054176\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\70b2ab690fdd08e48feaffe23f780a75\transformed\activity-compose-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.10.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\70b2ab690fdd08e48feaffe23f780a75\transformed\activity-compose-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\af0975a911e995cba0c16271ee76eff8\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\af0975a911e995cba0c16271ee76eff8\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\188a9f1ae142785497eb6ce88692d316\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\188a9f1ae142785497eb6ce88692d316\transformed\core-ktx-1.16.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\a815058944953ce5c96a2fdd8a81201d\transformed\room-ktx-2.7.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\a815058944953ce5c96a2fdd8a81201d\transformed\room-ktx-2.7.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\edf6a732dc496faf89c2952a2a029bb3\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\edf6a732dc496faf89c2952a2a029bb3\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c4562d00a60af35088ccf50d25eab7d1\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\c4562d00a60af35088ccf50d25eab7d1\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\11f6dda61690c5332fc45b740dbac85d\transformed\sqlite-framework-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\11f6dda61690c5332fc45b740dbac85d\transformed\sqlite-framework-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d756ac491476b4124cb55e1714ea6c04\transformed\sqlite-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\d756ac491476b4124cb55e1714ea6c04\transformed\sqlite-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\57e4b69b2f2914f24678a98e976b627b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\57e4b69b2f2914f24678a98e976b627b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1934ec42aa73163f8189765af611a963\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1934ec42aa73163f8189765af611a963\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c4dfdca8f3e243a39c893707128223d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c4dfdca8f3e243a39c893707128223d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\069d5c2fa0a67e88091aaf21f4d36e24\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\069d5c2fa0a67e88091aaf21f4d36e24\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\90214cb11b6bdd488710a0d87912b021\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\90214cb11b6bdd488710a0d87912b021\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\2404a5d511caf5f38c6c720e7b834970\transformed\gifdecoder-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:5.0.0-rc01] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\2404a5d511caf5f38c6c720e7b834970\transformed\gifdecoder-5.0.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e4577b7c6ce5f59acd53c2e9033a2903\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e4577b7c6ce5f59acd53c2e9033a2903\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Normaler Nutzer\AndroidStudioProjects\little-lemon-capstone\little-lemon\app\src\main\AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\ffb06b90d47f58b76c07293c85df8192\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c4dfdca8f3e243a39c893707128223d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c4dfdca8f3e243a39c893707128223d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e362e2ca579cfcb24604e491080af190\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+permission#com.littlelemon.littlelemon.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+uses-permission#com.littlelemon.littlelemon.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\63a5c494ef6c7a51b989cafc8662eff6\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\def27742fdd3d7822d477b1551dacda8\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:30:17-78
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:23:9-26:79
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:25:13-36
+	android:theme
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:26:13-76
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.8.3] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\1c808f36d9775acebac16b2b69bccf3f\transformed\ui-test-manifest-1.8.3\AndroidManifest.xml:24:13-63
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime-android:2.7.2] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\e8ff2d54685dcb40932f676b7b244b60\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Normaler Nutzer\Downloads\LittleLemon-LazyGrid-Reading-initial\caches\8.11.1\transforms\940bdeb04d40807c905fdf14f001b617\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92

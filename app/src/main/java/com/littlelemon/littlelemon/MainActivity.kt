@@ -66,14 +66,7 @@ class MainActivity: ComponentActivity() {
                 Log.d("MainActivity", "Save ${items.size} Einträge in DB")
             }
             //val itemsInDb = menuItemDao.getAllMenuItemsNow()
-            //Log.d("MainActivity", "→ In DB nach Save: ${itemsInDb.size} Einträge")
 
-
-            //} catch (e: Exception) {
-            // Fehlerbehandlung
-            //    Log.d("MainActivity", "Fehler")
-            //    e.printStackTrace()
-            //}
         }
         //UI anzeigen
         setContent {
