@@ -6,6 +6,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -13,13 +14,14 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,7 +38,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -44,14 +45,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
+import kotlin.text.category
 
 @Composable
 fun Home(navController: NavHostController) {
     val context = LocalContext.current
     val db = remember { AppDatabase.getDatabase(context) }
     val menuItems by db.menuItemDao().getAllMenuItems().observeAsState(emptyList())
-    Log.d("HomeScreen", "MenuItems loaded: ${menuItems.size}")
-    Log.d("DEBUG", "MenuItems in DB: ${menuItems.size}")
+    //Log.d("HomeScreen", "MenuItems loaded: ${menuItems.size}")
+    //Log.d("DEBUG", "MenuItems in DB: ${menuItems.size}")
     Column(
         modifier = Modifier
             .padding(top = 16.dp, bottom = 5.dp)
@@ -121,6 +123,7 @@ fun Home(navController: NavHostController) {
          }
 
         var searchPhrase by remember { mutableStateOf("") }
+        var selectedCategory by remember { mutableStateOf<String?>(null) }
         OutlinedTextField(
             value = searchPhrase,
             onValueChange = { searchPhrase = it },
@@ -136,22 +139,33 @@ fun Home(navController: NavHostController) {
              .padding(start = 15.dp, end = 15.dp),
             shape = RoundedCornerShape(18.dp)
         )
-        val filteredItems = menuItems.filter { item ->
-            searchPhrase.isBlank() || item.title.contains(searchPhrase, ignoreCase = true)
+
+        CategoryBar(
+            categories = listOf("Starters", "Mains", "Desserts", "Drinks"),
+            selected = selectedCategory,
+            onCategorySelected = { selected ->
+                selectedCategory = if (selectedCategory == selected) null else selected
             }
+        )
+
+        val filteredItems = menuItems.filter { item ->
+            (selectedCategory.isNullOrBlank() || item.category.equals(selectedCategory, ignoreCase = true)) &&
+                    (searchPhrase.isBlank() || item.title.contains(searchPhrase, ignoreCase = true))
+        }
 
         MenuItems(filteredItems)
         }
 }
 
+
+
 @Composable
 fun MenuItems(menuItems: List<MenuItem>) {
 
     LazyColumn {
-            items(menuItems){
-
+            items(items = menuItems, itemContent = {
             item -> MenuItemView(item)
-        }
+        })
     }
 }
 
@@ -172,6 +186,46 @@ fun MenuItemView(item: MenuItem) {
         )
     }
 }
+
+@Composable
+fun CategoryBar(
+    categories: List<String>,
+    selected: String?,
+    modifier: Modifier = Modifier,
+    onCategorySelected: (String) -> Unit
+) {
+    LazyRow(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        contentPadding = PaddingValues(horizontal = 12.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        items(categories) { category ->
+            val isSelected = category == selected
+
+            Box(
+                modifier = Modifier
+                    .clickable { onCategorySelected(category) }
+                    .background(
+                        color = if (isSelected) MaterialTheme.colorScheme.primary else Color.LightGray,
+                        shape = RoundedCornerShape(20.dp)
+                    )
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Text(
+                    text = category,
+                    color = if (isSelected) Color.White else Color.Black,
+                    fontSize = 14.sp
+                )
+            }
+        }
+    }
+}
+
+
+
 
 @Preview(showBackground = true)
 @Composable

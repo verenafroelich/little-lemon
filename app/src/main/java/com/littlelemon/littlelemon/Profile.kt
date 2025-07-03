@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import androidx.core.content.edit
 
 @Composable
 fun Profile(navController: NavHostController) {
@@ -127,9 +128,9 @@ fun Profile(navController: NavHostController) {
                 shape = RoundedCornerShape(20.dp),
                 onClick = {
                     //delete firstname, lastname from shared preferences
-                    val editor = sharedPreferences.edit()
-                    editor.clear()
-                    editor.apply()
+                    sharedPreferences.edit {
+                        clear()
+                    }
                     //navigate to Onboarding
                     navController.navigate("Onboarding")}
             ) {

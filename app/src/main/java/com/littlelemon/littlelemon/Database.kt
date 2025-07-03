@@ -12,6 +12,8 @@ import androidx.room.PrimaryKey
 import androidx.room.Query
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 
 @Entity
 data class MenuItem(
@@ -20,7 +22,8 @@ data class MenuItem(
     val title: String,
     val price: String,
     val description: String,
-    val image: String
+    val image: String,
+    val category: String
 )
 
 @Dao
@@ -37,7 +40,13 @@ interface MenuItemDao{
     suspend fun deleteMenuItem(menuItem: MenuItem)
 }
 
-@Database(entities = [MenuItem::class], version = 1, exportSchema = false)
+val MIGRATION_1_2 = object : Migration(1, 2) {
+    override fun migrate(database: SupportSQLiteDatabase) {
+        database.execSQL("ALTER TABLE MenuItem ADD COLUMN category TEXT NOT NULL DEFAULT ' '")
+    }
+}
+
+@Database(entities = [MenuItem::class], version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun menuItemDao(): MenuItemDao
 
@@ -51,12 +60,15 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "menu.db"
-                ).build()
+                )
+                    .addMigrations(MIGRATION_1_2)
+                    .build()
                 INSTANCE = instance
                 instance
             }
         }
     }
+ }
 
-}
+
 

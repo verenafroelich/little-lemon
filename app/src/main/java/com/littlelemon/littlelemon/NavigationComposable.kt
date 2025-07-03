@@ -16,10 +16,11 @@ fun navigation(navController: NavHostController) {
     val context = LocalContext.current
     val sharedPreferences: SharedPreferences =
         context.getSharedPreferences("LittleLemon", Context.MODE_PRIVATE)
-    sharedPreferences.getString("firstName", "").toString()
+    val firstName = sharedPreferences.getString("firstName", "").toString()
+    val lastName = sharedPreferences.getString("firstName", "").toString()
+    val email = sharedPreferences.getString("firstName", "").toString()
 
-
-    if(userRegistered){
+    if(!firstName.isBlank() && !lastName.isBlank() && !email.isBlank()){
         startDestination = Home.route
     }
     NavHost(

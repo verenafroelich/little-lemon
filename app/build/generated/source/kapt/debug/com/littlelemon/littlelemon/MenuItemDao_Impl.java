@@ -36,7 +36,7 @@ public final class MenuItemDao_Impl implements MenuItemDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR REPLACE INTO `MenuItem` (`id`,`title`,`price`,`description`,`image`) VALUES (?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `MenuItem` (`id`,`title`,`price`,`description`,`image`,`category`) VALUES (?,?,?,?,?,?)";
       }
 
       @Override
@@ -63,6 +63,11 @@ public final class MenuItemDao_Impl implements MenuItemDao {
         } else {
           statement.bindText(5, entity.getImage());
         }
+        if (entity.getCategory() == null) {
+          statement.bindNull(6);
+        } else {
+          statement.bindText(6, entity.getCategory());
+        }
       }
     };
     this.__deleteAdapterOfMenuItem = new EntityDeleteOrUpdateAdapter<MenuItem>() {
@@ -81,22 +86,21 @@ public final class MenuItemDao_Impl implements MenuItemDao {
   }
 
   @Override
-  public Object saveMenuItem(final MenuItem item, final Continuation<? super Unit> $completion) {
+  public Object saveMenuItem(final MenuItem item, final Continuation<? super Unit> arg1) {
     if (item == null) throw new NullPointerException();
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       __insertAdapterOfMenuItem.insert(_connection, item);
       return Unit.INSTANCE;
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object deleteMenuItem(final MenuItem menuItem,
-      final Continuation<? super Unit> $completion) {
+  public Object deleteMenuItem(final MenuItem menuItem, final Continuation<? super Unit> arg1) {
     if (menuItem == null) throw new NullPointerException();
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       __deleteAdapterOfMenuItem.handle(_connection, menuItem);
       return Unit.INSTANCE;
-    }, $completion);
+    }, arg1);
   }
 
   @Override
@@ -110,6 +114,7 @@ public final class MenuItemDao_Impl implements MenuItemDao {
         final int _columnIndexOfPrice = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "price");
         final int _columnIndexOfDescription = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "description");
         final int _columnIndexOfImage = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "image");
+        final int _columnIndexOfCategory = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "category");
         final List<MenuItem> _result = new ArrayList<MenuItem>();
         while (_stmt.step()) {
           final MenuItem _item;
@@ -139,7 +144,13 @@ public final class MenuItemDao_Impl implements MenuItemDao {
           } else {
             _tmpImage = _stmt.getText(_columnIndexOfImage);
           }
-          _item = new MenuItem(_tmpId,_tmpTitle,_tmpPrice,_tmpDescription,_tmpImage);
+          final String _tmpCategory;
+          if (_stmt.isNull(_columnIndexOfCategory)) {
+            _tmpCategory = null;
+          } else {
+            _tmpCategory = _stmt.getText(_columnIndexOfCategory);
+          }
+          _item = new MenuItem(_tmpId,_tmpTitle,_tmpPrice,_tmpDescription,_tmpImage,_tmpCategory);
           _result.add(_item);
         }
         return _result;
@@ -160,6 +171,7 @@ public final class MenuItemDao_Impl implements MenuItemDao {
         final int _columnIndexOfPrice = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "price");
         final int _columnIndexOfDescription = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "description");
         final int _columnIndexOfImage = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "image");
+        final int _columnIndexOfCategory = SQLiteStatementUtil.getColumnIndexOrThrow(_stmt, "category");
         final List<MenuItem> _result = new ArrayList<MenuItem>();
         while (_stmt.step()) {
           final MenuItem _item;
@@ -189,7 +201,13 @@ public final class MenuItemDao_Impl implements MenuItemDao {
           } else {
             _tmpImage = _stmt.getText(_columnIndexOfImage);
           }
-          _item = new MenuItem(_tmpId,_tmpTitle,_tmpPrice,_tmpDescription,_tmpImage);
+          final String _tmpCategory;
+          if (_stmt.isNull(_columnIndexOfCategory)) {
+            _tmpCategory = null;
+          } else {
+            _tmpCategory = _stmt.getText(_columnIndexOfCategory);
+          }
+          _item = new MenuItem(_tmpId,_tmpTitle,_tmpPrice,_tmpDescription,_tmpImage,_tmpCategory);
           _result.add(_item);
         }
         return _result;

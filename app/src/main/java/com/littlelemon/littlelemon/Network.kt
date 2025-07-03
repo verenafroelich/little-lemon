@@ -23,7 +23,8 @@ data class MenuNetwork (
                 title = title,
                 description = description,
                 price = price,
-                image = image
+                image = image,
+                category = category
             )
         }
     }

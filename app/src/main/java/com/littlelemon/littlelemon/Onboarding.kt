@@ -116,14 +116,13 @@ fun Onboarding(navController: NavHostController) {
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {
-                    // Speichere die Werte in SharedPreferences
+
                     with(sharedPreferences.edit()) {
                         putString("firstName", firstName)
                         putString("lastName", lastName)
                         putString("email", email)
                         commit()
                     }
-                    // Navigiere zur Home-Seite
                     navController.navigate("Home")
                 }
             }, modifier = Modifier.padding(start = 36.dp)) {
